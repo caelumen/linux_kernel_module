@@ -2,9 +2,9 @@
 
 # kernel-header check or install  for kernel module compile
 ll /usr/src/kernels/
-yum install kernel-devel
+yum install kernel-devel -y
 ls -l /usr/src/kernels/$(uname -r)
-yum install kernel-headers
+yum install kernel-headers -y
 
 # git install
 yum install git -y
