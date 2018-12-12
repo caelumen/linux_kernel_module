@@ -12,3 +12,13 @@ $ ./start_kernel_crash.sh
 ```
 
 
+```bash
+Do you want to make a kernel crash intentionally ? [y/n]
+```
+상기 질문에 `y`를 입력하면, Crash가 발생하고 Reboot 된다. 
+Rebooting 후에, `/var/crash` 경로에서 Kernel Dump (vmcore)를 확인할 수 잇다. 
+
+
+
+
+
