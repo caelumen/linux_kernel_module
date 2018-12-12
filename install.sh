@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# check out the current working directory
+echo "current dir : $(pwd)"
+
 # kernel module compile 
 make
 
