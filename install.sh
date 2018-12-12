@@ -1,9 +1,19 @@
 #!/bin/bash
 
+# kernel-header check or install
+ll /usr/src/kernels/
+yum install kernel-devel
+ls -l /usr/src/kernels/$(uname -r)
+yum install kernel-headers
+
+# git install
 yum install git -y
 git clone https://github.com/windflex-sjlee/linux_kernel_module.git
-cd linux_kernel_module
+
+# kernel module compile 
 make
+
+# insert kernel module
 insmod hello.ko
 insmod hello_2.ko
-cd ..
+
