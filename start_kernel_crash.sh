@@ -18,7 +18,7 @@ cd linux_kernel_module
 while true; do
     read -p "Do you want to make a kernel crash intentionally ? [y/n] " yn
     case $yn in
-        [Yy]* ) echo " => Starting Kernel Crashing .... !!"; linux_kernel_module/fault.sh; break;;
+        [Yy]* ) echo " => Starting Kernel Crashing .... !!"; ./fault.sh; break;;
         [Nn]* ) echo " => Stopping Kernel Crashing .... !!"; exit;;
         * ) echo "Please answer yes or no.";;
     esac
