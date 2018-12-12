@@ -11,7 +11,8 @@ yum install git -y
 git clone https://github.com/windflex-sjlee/linux_kernel_module.git
 
 # make install and insert kernel module
-linux_kernel_module/install.sh
+cd linux_kernel_module
+./install.sh
 
 # executing fault.sh and ask if doing them or not
 while true; do
@@ -22,3 +23,5 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+
+cd -
