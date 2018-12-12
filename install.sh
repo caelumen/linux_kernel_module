@@ -6,4 +6,4 @@ make
 # insert kernel module
 insmod hello.ko
 insmod hello_2.ko
-cd ..
+
