@@ -12,6 +12,7 @@ git clone https://github.com/windflex-sjlee/linux_kernel_module.git
 
 # make install and insert kernel module
 cd linux_kernel_module
+ll hello*
 ./install.sh
 
 # executing fault.sh and ask if doing them or not
@@ -24,4 +25,4 @@ while true; do
     esac
 done
 
-cd -
+cd ..
